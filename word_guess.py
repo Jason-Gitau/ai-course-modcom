@@ -51,6 +51,23 @@ while attempts<7:
 
 
 # changes made to the code by chatgpt
+"""Key Changes:
+
+    Input Validation:
+
+        Changed if not guess.isalpha and len(guess) != 1 or guess != ' ' to if not guess.isalpha() or len(guess) != 1 to properly check if the input is a single alphabetic letter.
+
+    Attempts Logic:
+
+        Changed attempts=1 to attempts -= 1 inside the else block to correctly decrease the number of attempts with each wrong guess.
+
+    display_word_progress:
+
+        Modified the logic to show underscores for letters that have not been guessed yet. This now compares the guessed letters to the word itself.
+
+    Game Flow:
+
+        The game continues until the player runs out of attempts or guesses all letters correctly. When the word is completed (complete() function), the player wins."""
 
 import random
 
