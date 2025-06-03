@@ -52,12 +52,15 @@ def main():
     print("\n menu")
     print()
     print("Type 1 to add a task")
-    print("type 2 to view tasks")
+    print("Type 2 to view tasks")
     print("Type 3 to update the status of the task")
-    print("type 4 to exit")
+    print("Type 4 to exit")
     
     while True:
         menu=input("> ")
+        if menu is not "1" or "2" or "3" or "4":
+            print("kindly enter a valid input")
+
 
         if menu =="4":
             break
