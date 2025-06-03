@@ -63,6 +63,7 @@ def main():
 
 
         if menu =="4":
+            print("see you another day")
             break
         
         elif menu == "1":
