@@ -1,0 +1,35 @@
+# Function to collect user input for churn prediction
+def get_user_details():
+    print("Please enter the following details:")
+
+    age = int(input("Age: "))
+    gender = int(input("Gender (1=Female, 2=Male): "))
+    tenure = int(input("Tenure (number of months with company): "))
+    usage_freq = int(input("Usage Frequency (number of uses per month): "))
+    support_calls = int(input("Support Calls (number in last year): "))
+    payment_delay = int(input("Payment Delay (number of days late): "))
+    subscription_type = int(input("Subscription Type (1=Basic, 2=Standard, 3=Premium): "))
+    contract_length = int(input("Contract Length (1=Monthly, 2=Quarterly, 3=Annual): "))
+    total_spend = int(input("Total Spend (amount spent): "))
+    last_interaction = int(input("Last Interaction (days since last contact): "))
+
+    user_data = [[
+        age,
+        gender,
+        tenure,
+        usage_freq,
+        support_calls,
+        payment_delay,
+        subscription_type,
+        contract_length,
+        total_spend,
+        last_interaction
+    ]]
+    return user_data
+
+# Example: get user data and use your model to predict
+user_details = get_user_details()
+
+# Example prediction (replace 'model' with your trained classifier)
+# prediction = model.predict(user_details)
+# print("Churn prediction:", prediction[0])
