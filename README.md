@@ -97,3 +97,10 @@ Using a pivot table involves deciding how you want to slice and dice your data. 
 
     Apply Filters (Optional): You can add filters to your pivot table to focus on specific subsets of your data, like sales for only a particular region or product.
     Pivot tables are incredibly powerful for quick data exploration and reporting, letting you gain insights by viewing your data from various perspectives.
+
+
+
+
+#GUNS(GENERATIVE ADVERSARIAL NETWORK)
+- THEY generate fake data
+- how generators and discriminator work together
